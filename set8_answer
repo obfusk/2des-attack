@@ -1,0 +1,22 @@
+$ ./attack2des.py < set8                                                                    
+< plain   = 0123456789abcdef                                                                
+< cipher  = 8dc1e5170cb054e0                                                                
+< creating table took 537 seconds                                                           
+< finding pairs  took 530 seconds                                                           
+< k1      = 0101010107cd37b9                                                                
+< k2      = 010101010b9d4667                                                                
+0101010107cd37b9 010101010b9d4667                                                           
+< plain   = 1122334455667788                                                                
+< cipher  = b91d899c5007f514                                                                
+< creating table took 530 seconds                                                           
+< finding pairs  took 522 seconds                                                           
+< k1      = 0101010107cd37b9                                                                
+< k2      = 010101010b9d4667                                                                
+0101010107cd37b9 010101010b9d4667                                                           
+< plain   = 99aabbccddeeff00                                                                
+< cipher  = 6b71df6c17ae286f                                                                
+< creating table took 530 seconds                                                           
+< finding pairs  took 521 seconds                                                           
+< k1      = 0101010107cd37b9                                                                
+< k2      = 010101010b9d4667                                                                
+0101010107cd37b9 010101010b9d4667                                                           
