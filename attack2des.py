@@ -28,7 +28,7 @@ def to_hex(x):
 
 def hamming_weight(n):
   """hamming weight"""
-  return len([b for b in bin(n)[2:] if b == '1'])
+  return bin(n)[2:].count('1')
 
 def add_parity(n):
   """add parity bit"""
