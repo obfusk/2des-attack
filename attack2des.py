@@ -2,8 +2,8 @@
 
 from __future__ import print_function
 
-from Crypto.Cipher.DES import DESCipher
 import binascii
+import Crypto.Cipher.DES
 import itertools
 import sys
 import time
@@ -36,11 +36,11 @@ def add_parity(n):
 
 def decrypt(bin_k, bin_cipher):
   """decrypt w/ DES"""
-  return DESCipher(bin_k).decrypt(bin_cipher)
+  return Crypto.Cipher.DES.new(bin_k).decrypt(bin_cipher)
 
 def encrypt(bin_k, bin_plain):
   """encrypt w/ DES"""
-  return DESCipher(bin_k).encrypt(bin_plain)
+  return Crypto.Cipher.DES.new(bin_k).encrypt(bin_plain)
 
 def nth_key(n):
   """nth hex key"""
